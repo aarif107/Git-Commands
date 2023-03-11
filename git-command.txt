@@ -1,0 +1,116 @@
+@   git config --global user.name "aarif"
+@   git config user.email "ahaarif107@gmail.com"
+
+#check set configuration
+
+	@   git config --list
+
+#change configuration
+
+	@   git config --global user.name "new_name"
+
+#check specific configuration
+
+	@   git config user.name
+
+#git commands
+
+	@   git init
+	@   git add .
+	@   git add -A
+
+	@   git staus
+	@   git commit -m "Commit"
+
+#Commit History
+
+	@   git log
+
+#add file and commit together
+
+	@   git add . && git commit -m "Added"
+
+#git-commit-undo
+
+	@   git reset --soft HEAD^
+
+#unCommit and remove from stagging area
+
+	@   git reset HEAD^
+
+#go to previous commit
+
+	@   git reset --hard HEAD^
+
+	#deleting number of commit
+
+		@   git reset -soft HEAD~2
+		@   git reset -soft HEAD~3
+
+coomit1----> commit2---->commit3
+
+#go to previous commit with numbers
+
+	@   git show HEAD~number
+
+#if i go to last/master coomit
+
+	@   git checkout master
+
+#git checkout is a safe option instead of reset
+
+	@   git checkout coomitID/HEAD~number
+
+#git info in oneline
+
+	@   git log --oneline
+
+#git info in details
+
+	@   git show number
+
+
+#after change/add code ,watch changed code/line
+
+	@   git diff
+
+#restore file
+
+	@   git restore "file_name"
+
+#unstage
+
+	@   git rm --cached file.txt
+
+#Check Remote Connection
+
+	@   git remote -v
+
+
+#Create new branch
+
+	@   git branch dev
+
+#Delete branch
+
+	@   git branch -d dev
+
+#Create and switch new branch
+
+	@   git branch -b dev
+
+
+#go to master to new branch
+
+	@   git checkout dev
+
+
+#again go to master
+
+	@   git checkout master
+
+
+#Merge
+
+	@   git merge dev
+
